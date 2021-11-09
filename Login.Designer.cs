@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+namespace WindowsFormsApp1
 {
     partial class Login
     {
@@ -61,6 +61,7 @@
             this.txtSenha.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txtSenha.Location = new System.Drawing.Point(117, 122);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(100, 26);
             this.txtSenha.TabIndex = 3;
             // 
@@ -89,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 261);
+            this.ClientSize = new System.Drawing.Size(379, 261);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.Senha);
