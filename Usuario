@@ -1,0 +1,31 @@
+namespace WindowsFormsApp1
+{
+    class Usuario
+    {
+        private string login;
+        private string senha;
+
+        public Usuario(string login, string senha)
+        {
+            this.login = login;
+            this.senha = senha;
+        }
+
+        public bool comparaLogin(string login)
+        {
+            if (this.login.Equals(login))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool comparaSenha(string senha)
+        {
+            if (this.senha.Equals(senha)){
+                return true;
+            }
+            return false;
+        }
+    }
+}
