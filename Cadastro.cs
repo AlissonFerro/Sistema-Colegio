@@ -53,16 +53,6 @@ namespace WindowsFormsApp1
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMatDep_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             string strSQL = "INSERT INTO Aluno(NOME_ALUNO, SOBRENOME_ALUNO, CPF, DATA_NASCIMENTO, MAIOR_IDADE, TURNO, TELEFONE, EMAIL)" +
@@ -111,8 +101,8 @@ namespace WindowsFormsApp1
         {
             Cadastro.ActiveForm.Hide();
             Menu menu = new Menu();
+            this.Hide();
             menu.Show();
-
         }
 
         private void btnCadastrarResponsavel_Click(object sender, EventArgs e)
